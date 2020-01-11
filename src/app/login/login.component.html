@@ -1,0 +1,16 @@
+
+<div class="container">
+
+  <h4 style="color: red">{{message}}</h4>
+
+  <label for="uname"><b style="color: crimson">* Email</b></label>
+  <input [(ngModel)]="email" type="text" placeholder="Enter Email" name="uname" required>
+
+  <label for="psw"><b style="color: crimson">* Password</b></label>
+  <input [(ngModel)]="password" type="password" placeholder="Enter Password" name="psw" required>
+      
+  <button (click)="onLogin()" >Login</button>
+
+  <a routerLink="/signup">Click here to Register</a>
+ 
+</div>
